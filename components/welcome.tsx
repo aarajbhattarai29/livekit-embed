@@ -77,7 +77,7 @@ export default function Welcome() {
         </div>
 
         <p>
-          The embed agent starter example is a low-code solution to embed a LiveKit Agent into an
+          The embed agent starter example is a low-code solution to embed a Pragni Agent into an
           existing website or web application.
         </p>
 
