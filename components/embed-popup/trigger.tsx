@@ -86,7 +86,7 @@ export function Trigger({ appConfig, error = null, popupOpen, onToggle }: Trigge
                   <img
                     src={appConfig.logo}
                     alt={`${appConfig.companyName || 'LiveKit'}`}
-                    className="size-5 rounded-sm object-contain"
+                    className="size-9 rounded-sm object-contain"
                   />
                 ) : (
                   // Default LiveKit mark: use CSS mask for single-color treatment
