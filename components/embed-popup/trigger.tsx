@@ -85,7 +85,7 @@ export function Trigger({ appConfig, error = null, popupOpen, onToggle }: Trigge
                   // eslint-disable-next-line @next/next/no-img-element
                   <img
                     src={appConfig.logo}
-                    alt={`${appConfig.companyName || 'LiveKit'}`}
+                    alt={`${appConfig.companyName || 'Pragnin'}`}
                     className="size-10 rounded-sm object-contain"
                   />
                 ) : (
