@@ -14,13 +14,13 @@ module.exports = {
     alias: { '@/*': path.resolve(__dirname, '*') },
     extensions: ['.tsx', '.ts', '.js'], // Resolve TypeScript and JS files
   },
-  plugins: [
-    // NOTE: the below doesn't whitelist, see https://github.com/mrsteele/dotenv-webpack/issues/41
-    new Dotenv({
-      systemvars: true,
-      path: '.env.local',
-    }),
-  ],
+  // plugins: [
+  //   // NOTE: the below doesn't whitelist, see https://github.com/mrsteele/dotenv-webpack/issues/41
+  //   new Dotenv({
+  //     systemvars: true,
+  //     path: '.env',
+  //   }),
+  // ],
   module: {
     rules: [
       {
