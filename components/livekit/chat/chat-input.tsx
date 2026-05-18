@@ -3,7 +3,7 @@ import { PaperPlaneRightIcon } from '@phosphor-icons/react';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 
-interface ChatInputProps extends React.HTMLAttributes<HTMLFormElement> {
+interface ChatInputProps extends React.FormHTMLAttributes<HTMLFormElement> {
   onSend?: (message: string) => void;
   disabled?: boolean;
 }
@@ -12,7 +12,7 @@ export function ChatInput({ onSend, className, disabled, ...props }: ChatInputPr
   const inputRef = useRef<HTMLInputElement>(null);
   const [message, setMessage] = useState<string>('');
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = (e: React.SubmitEvent<HTMLFormElement>) => {
     e.preventDefault();
     props.onSubmit?.(e);
     onSend?.(message);
